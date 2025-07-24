@@ -1,0 +1,246 @@
+<!-- res/layout/item_transcript_entry.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/selector_transcript_highlight"
+    android:baselineAligned="false">
+
+    <View
+        android:id="@+id/viewSentimentIndicatorVertical"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        tools:background="?attr/colorPrimary"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Speaker Info (Label and Time) -->
+        <LinearLayout
+            android:id="@+id/llSpeakerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/tvSpeakerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Patient"
+                android:textAppearance="?attr/textAppearanceLabelMedium"
+                android:textStyle="bold"
+                tools:textColor="?attr/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvSpeakerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00:45"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textColor="?attr/colorOnSurfaceVariant"/>
+        </LinearLayout>
+
+        <!-- Utterance Text -->
+        <TextView
+            android:id="@+id/tvSpeakerSentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="This is the utterance from the speaker. It can be a long sentence."
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurface"/>
+
+        <!-- Timed Notes Container -->
+        <LinearLayout
+            android:id="@+id/llTranscriptTimedNotesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/background_timed_note_container"
+            android:visibility="gone"
+            tools:visibility="visible">
+            <!-- Timed notes will be added here programmatically -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transcript_timed_notes_label"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textStyle="italic"
+                android:layout_marginBottom="4dp"
+                tools:visibility="visible"/>
+            <TextView
+                tools:text="[Timed Note Placeholder 1]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:paddingTop="8dp"-->
+<!--    android:paddingBottom="8dp"-->
+<!--    android:clickable="true"-->
+<!--    android:focusable="true"-->
+<!--    android:foreground="@drawable/selector_transcript_highlight"-->
+<!--    >-->
+
+<!--    <View-->
+<!--        android:id="@+id/viewTranscriptSentimentIndicator"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="3dp"-->
+<!--        android:layout_marginBottom="6dp"-->
+<!--        tools:background="?attr/colorPrimary"-->
+<!--        android:visibility="gone"-->
+<!--        tools:visibility="visible"/>-->
+
+<!--    &lt;!&ndash; Therapist Utterance Block &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llTherapistBlock"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:visibility="gone"-->
+<!--    tools:visibility="visible">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTranscriptTherapistLabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Therapist"-->
+<!--        android:textAppearance="?attr/textAppearanceLabelMedium"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="?attr/colorSecondary"-->
+<!--        android:layout_marginEnd="8dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTranscriptTherapistTime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="00:30"-->
+<!--            android:textAppearance="?attr/textAppearanceLabelSmall"-->
+<!--            android:textColor="?attr/colorOnSurfaceVariant"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvTranscriptTherapistSentence"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        tools:text="Tell me more about how that made you feel."-->
+<!--        android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--        android:textColor="?attr/colorOnSurface"/>-->
+<!--</LinearLayout>-->
+
+<!--    &lt;!&ndash; Patient Utterance Block &ndash;&gt;-->
+<!--<LinearLayout-->
+<!--android:id="@+id/llPatientBlock"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_marginBottom="4dp"-->
+<!--android:visibility="gone"-->
+<!--    tools:visibility="visible">-->
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--android:gravity="center_vertical">-->
+
+<!--<TextView-->
+<!--    android:id="@+id/tvTranscriptPatientLabel"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Patient"-->
+<!--android:textAppearance="?attr/textAppearanceLabelMedium"-->
+<!--android:textStyle="bold"-->
+<!--android:textColor="?attr/colorPrimary"-->
+<!--android:layout_marginEnd="8dp"/>-->
+
+<!--<TextView-->
+<!--    android:id="@+id/tvTranscriptPatientTime"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    tools:text="00:45"-->
+<!--    android:textAppearance="?attr/textAppearanceLabelSmall"-->
+<!--    android:textColor="?attr/colorOnSurfaceVariant"/>-->
+<!--</LinearLayout>-->
+
+<!--<TextView-->
+<!--android:id="@+id/tvTranscriptPatientSentence"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="2dp"-->
+<!--tools:text="It just felt overwhelming, like I couldn't handle it."-->
+<!--android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--android:textColor="?attr/colorOnSurface"/>-->
+<!--    </LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--android:id="@+id/llTranscriptTimedNotesContainer"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_marginTop="6dp"-->
+<!--android:layout_marginStart="4dp"-->
+<!--android:layout_marginEnd="4dp"-->
+<!--    android:paddingStart="8dp"-->
+<!--    android:paddingEnd="8dp"-->
+<!--    android:background="@drawable/background_timed_note_container"-->
+<!--    android:visibility="gone"-->
+<!--    tools:visibility="visible">-->
+<!--<TextView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="@string/transcript_timed_notes_label"-->
+<!--android:textAppearance="?attr/textAppearanceLabelSmall"-->
+<!--android:textStyle="italic"-->
+<!--android:layout_marginBottom="4dp"-->
+<!--tools:visibility="visible"/>-->
+<!--<TextView-->
+<!--tools:text="[Timed Note Placeholder 1]"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"/>-->
+<!--<TextView-->
+<!--tools:text="[Timed Note Placeholder 2]"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"/>-->
+<!--    </LinearLayout>-->
+
+<!--    </LinearLayout>-->

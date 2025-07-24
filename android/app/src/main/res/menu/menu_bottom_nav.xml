@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_session"
+        android:icon="@drawable/baseline_chair_24"
+        android:title="@string/navBarSession"/>
+    <item
+        android:id="@+id/nav_data"
+        android:icon="@drawable/baseline_assessment_24"
+        android:title="@string/navBarData"/>
+    <item
+        android:id="@+id/nav_browse"
+        android:icon="@drawable/baseline_view_headline_24"
+        android:title="@string/navBarBrowse"/>
+</menu>

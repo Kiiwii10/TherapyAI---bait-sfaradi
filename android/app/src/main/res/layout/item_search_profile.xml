@@ -1,0 +1,157 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/materialCardViewElevatedStyle"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">        <!-- Using ShapeableImageView for better profile picture display -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/profile_picture"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            tools:text="Patient Name Here"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintStart_toEndOf="@id/ivProfilePicture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvDateOfBirthLabel"/>
+
+        <TextView
+            android:id="@+id/tvProfileId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="ID: P123456789"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toStartOf="@id/tvProfileName"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+            app:layout_constraintEnd_toEndOf="@id/tvProfileName"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Age section aligned to the right -->
+        <TextView
+            android:id="@+id/tvDateOfBirthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_item_DateOfBirth_label"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvDateOfBirthValue"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/tvDateOfBirthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="35"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDateOfBirthLabel"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    style="?attr/materialCardViewElevatedStyle"-->
+<!--    android:layout_marginStart="8dp"-->
+<!--    android:layout_marginEnd="8dp"-->
+<!--    android:layout_marginTop="4dp"-->
+<!--    android:layout_marginBottom="4dp">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="12dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivProfilePicture"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/baseline_account_circle_24"-->
+<!--            app:tint="?attr/colorPrimary"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:contentDescription="@string/profile_picture" />-->
+<!--        &lt;!&ndash; Consider using CircleImageView library for better rounded images &ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvProfileName"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            tools:text="Patient Name Here"-->
+<!--            android:textAppearance="?attr/textAppearanceTitleMedium"-->
+<!--            android:textColor="?attr/colorOnSurface"-->
+<!--            app:layout_constraintStart_toEndOf="@id/ivProfilePicture"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/tvProfileAgeLabel"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvProfileId"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="ID: P123456789"-->
+<!--            android:textAppearance="?attr/textAppearanceBodySmall"-->
+<!--            android:textColor="?attr/colorOnSurfaceVariant"-->
+<!--            app:layout_constraintStart_toStartOf="@id/tvProfileName"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvProfileName"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/tvProfileName"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvProfileAgeLabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/age_label"-->
+<!--            android:textAppearance="?attr/textAppearanceLabelSmall"-->
+<!--            android:textColor="?attr/colorOnSurfaceVariant"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/tvProfileAgeValue"-->
+<!--            app:layout_constraintVertical_chainStyle="packed"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvProfileAgeValue"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="35"-->
+<!--            android:textAppearance="?attr/textAppearanceBodyMedium"-->
+<!--            android:textColor="?attr/colorOnSurface"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvProfileAgeLabel"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->

@@ -1,0 +1,130 @@
+<!-- res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.TherapyAI" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Material 3 Color Attributes -->
+        <item name="colorPrimary">@color/m3_primary_light</item>
+        <item name="colorOnPrimary">@color/m3_on_primary_light</item>
+        <item name="colorPrimaryContainer">@color/m3_primary_container_light</item>
+        <item name="colorOnPrimaryContainer">@color/m3_on_primary_container_light</item>
+        <item name="colorSecondary">@color/m3_secondary_light</item>
+        <item name="colorOnSecondary">@color/m3_on_secondary_light</item>
+        <item name="colorSecondaryContainer">@color/m3_secondary_container_light</item>
+        <item name="colorOnSecondaryContainer">@color/m3_on_secondary_container_light</item>
+        <item name="colorTertiary">@color/m3_tertiary_light</item>
+        <item name="colorOnTertiary">@color/m3_on_tertiary_light</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiary_container_light</item>
+        <item name="colorOnTertiaryContainer">@color/m3_on_tertiary_container_light</item>
+        <item name="colorError">@color/m3_error_light</item>
+        <item name="colorOnError">@color/m3_on_error_light</item>
+        <item name="colorErrorContainer">@color/m3_error_container_light</item>
+        <item name="colorOnErrorContainer">@color/m3_on_error_container_light</item>
+        <item name="android:colorBackground">@color/m3_background_light</item>
+        <item name="colorOnBackground">@color/m3_on_background_light</item>
+        <item name="colorSurface">@color/m3_surface_light</item>
+        <item name="colorOnSurface">@color/m3_on_surface_light</item>
+        <item name="colorSurfaceVariant">@color/m3_surface_variant_light</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant_light</item>
+        <item name="colorOutline">@color/m3_outline_light</item>
+        <item name="colorOutlineVariant">@color/m3_outline_variant_light</item>
+        <item name="colorSurfaceInverse">@color/m3_inverse_surface_light</item>
+        <item name="colorOnSurfaceInverse">@color/m3_inverse_on_surface_light</item>
+        <item name="colorPrimaryInverse">@color/m3_inverse_primary_light</item>
+        <!-- Add other M3 attributes as needed (surfaceDim, surfaceBright, surfaceContainers) -->
+        <item name="colorSurfaceContainerLowest">@color/m3_surface_container_lowest_light</item>
+        <item name="colorSurfaceContainerLow">@color/m3_surface_container_low_light</item>
+        <item name="colorSurfaceContainer">@color/m3_surface_container_light</item>
+        <item name="colorSurfaceContainerHigh">@color/m3_surface_container_high_light</item>
+        <item name="colorSurfaceContainerHighest">@color/m3_surface_container_highest_light</item>
+
+
+        <!-- Status Bar & Navigation Bar -->
+        <item name="android:statusBarColor">?attr/colorSurface</item> <!-- Use theme colors -->
+        <item name="android:navigationBarColor">?attr/colorSurfaceContainerLow</item> <!-- Slightly different color -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Light background = dark icons -->
+        <item name="android:windowLightNavigationBar">true</item> <!-- Light background = dark icons -->
+
+        <!-- Map YOUR Custom Attributes to Material 3 Roles -->
+        <!-- Decide if these are still needed. If so, map them thoughtfully. -->
+        <item name="colorPrimaryBackground">?attr/colorSurface</item> <!-- Or ?attr/android:colorBackground -->
+        <item name="colorOnPrimaryBackground">?attr/colorOnSurface</item> <!-- Or ?attr/colorOnBackground -->
+        <item name="colorSecondaryBackground">?attr/colorSurfaceContainerLow</item> <!-- Example mapping -->
+
+        <item name="colorCategoryBtn">?attr/colorSurfaceContainerHigh</item> <!-- Example: Higher surface for inactive btn -->
+        <item name="colorSelectedCategoryBtn">?attr/colorPrimaryContainer</item> <!-- Selected is primary container -->
+        <item name="colorOnCategoryBtnText">?attr/colorOnSurfaceVariant</item> <!-- Text color for category buttons -->
+        <!-- Adjust mapping based on desired appearance -->
+
+
+        <!-- Define Custom Styles -->
+        <item name="materialCardViewOutlineStyle">@style/Widget.App.CardView.Outlined</item>
+        <!-- Add other custom component styles here -->
+
+        <item name="positiveSentimentColor">@color/sentiment_positive</item>
+        <item name="neutralSentimentColor">@color/sentiment_neutral</item>
+        <item name="negativeSentimentColor">@color/sentiment_negative</item>
+        <item name="mixedSentimentColor">@color/sentiment_mixed</item>
+        <item name="therapistIndicatorColor">@color/therapist_indicator_color</item>
+
+    </style>
+
+    <style name="Theme.TherapyAI" parent="Base.Theme.TherapyAI" />
+
+    <!-- Define the actual style for outlined card -->
+    <style name="Widget.App.CardView.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <!-- Customize outlined card style if necessary -->
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item> <!-- Use M3 outline color -->
+    </style>
+
+</resources>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<resources>-->
+<!--    <style name="Theme.TherapyAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/primary_light</item>-->
+<!--        <item name="colorOnPrimary">@color/on_primary_light</item>-->
+
+<!--        &lt;!&ndash; Secondary brand color &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/secondary_light</item>-->
+<!--        <item name="colorOnSecondary">@color/on_secondary_light</item>-->
+
+<!--        &lt;!&ndash; error color &ndash;&gt;-->
+<!--        <item name="colorError">@color/error_light</item>-->
+<!--        <item name="colorOnError">@color/on_error_light</item>-->
+
+<!--        &lt;!&ndash; Phone Items &ndash;&gt;-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+<!--        <item name="android:windowTranslucentNavigation">false</item>-->
+
+<!--        &lt;!&ndash; Dark icons on status bar (API 23+) &ndash;&gt;-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+<!--        &lt;!&ndash; Dark icons on navigation bar (API 27+) &ndash;&gt;-->
+<!--        <item name="android:windowLightNavigationBar">true</item>-->
+
+<!--        <item name="android:navigationBarColor">@color/background_light</item>-->
+<!--        <item name="android:windowBackground">@color/background_light</item>-->
+<!--        <item name="android:statusBarColor">@color/background_light</item>-->
+
+
+
+<!--        &lt;!&ndash; Background colors &ndash;&gt;-->
+<!--        <item name="colorPrimaryBackground">@color/background_light</item>-->
+<!--        <item name="colorOnPrimaryBackground">@color/on_background_light</item>-->
+<!--        <item name="colorSurface">@color/surface_light</item>-->
+<!--        <item name="colorOnSurface">@color/on_surface_light</item>-->
+<!--        <item name="colorSecondaryBackground">@color/secondaryBackground_light</item>-->
+
+<!--        <item name="colorCategoryBtn">@color/categoryBtn_light</item>-->
+<!--        <item name="colorSelectedCategoryBtn">@color/selectedCategoryBtn_light</item>-->
+<!--        <item name="colorOnCategoryBtnText">@color/onCategoryBtn_light</item>-->
+
+
+
+<!--    </style>-->
+<!--</resources>-->

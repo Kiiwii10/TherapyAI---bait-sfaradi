@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State: Activated (used for temporary highlight) -->
+    <!-- Use a distinct color for the bloom effect -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorPrimaryContainer"/> <!-- Or ?attr/colorSecondaryContainer, or a custom color -->
+            <corners android:radius="4dp"/> <!-- Optional: match card corners -->
+        </shape>
+    </item>
+
+    <!-- State: Pressed -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorControlHighlight"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <!-- Default state (not activated, not pressed) -->
+    <!-- Use the default card background or transparent -->
+    <item>
+        <!-- Make it transparent so the CardView's background shows through -->
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+        <!-- Or reference the card style background if needed, but transparent usually works -->
+        <!-- <color android:color="?attr/colorSurfaceContainerLowest"/> -->
+    </item>
+
+</selector>

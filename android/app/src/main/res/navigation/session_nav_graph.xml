@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/session_nav_graph"
+    app:startDestination="@id/formFragment">
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.therapyai.ui.sessions.session.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" >
+        <action
+            android:id="@+id/action_formFragment_to_audioRecordFragment"
+            app:destination="@id/audioRecordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+<!--        <action-->
+<!--            android:id="@+id/action_formFragment_to_vrRecordFragment"-->
+<!--            app:destination="@id/vrRecordFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_formFragment_to_relaxationFragment"-->
+<!--            app:destination="@id/relaxationFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"/>-->
+        <argument
+            android:name="selectedCardItem"
+            app:argType="com.example.therapyai.data.local.models.CardItem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/audioRecordFragment"
+        android:name="com.example.therapyai.ui.sessions.defaultAudio.AudioRecordFragment"
+        android:label="fragment_audio_record"
+        tools:layout="@layout/fragment_audio_record" >
+        <action
+            android:id="@+id/action_audioRecordFragment_to_addSummaryFragment"
+            app:destination="@id/addSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/formFragment" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/vrRecordFragment"-->
+<!--        android:name="com.example.therapyai.ui.sessions.vr.VRRecordFragment"-->
+<!--        android:label="VR Session"-->
+<!--        tools:layout="@layout/fragment_vr_record" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_vrRecordFragment_to_addSummaryFragment"-->
+<!--            app:destination="@id/addSummaryFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:popUpTo="@id/formFragment" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/relaxationFragment"-->
+<!--        android:name="com.example.therapyai.ui.sessions.relaxation.RelaxationFragment"-->
+<!--        android:label="Relaxation Session"-->
+<!--        tools:layout="@layout/fragment_relaxation" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_relaxationFragment_to_addSummaryFragment"-->
+<!--            app:destination="@id/addSummaryFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:popUpTo="@id/formFragment" />-->
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/addSummaryFragment"
+        android:name="com.example.therapyai.ui.sessions.session.AddSummaryFragment"
+        android:label="fragment_add_summary"
+        tools:layout="@layout/fragment_add_summary" >
+        <action
+            android:id="@+id/action_addSummaryFragment_to_reviewSubmitFragment"
+            app:destination="@id/reviewSubmitFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/addSummaryFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/reviewSubmitFragment"
+        android:name="com.example.therapyai.ui.sessions.session.ReviewSubmitFragment"
+        android:label="fragment_review_submit"
+        tools:layout="@layout/fragment_review_submit" />
+
+</navigation>

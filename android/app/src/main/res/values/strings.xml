@@ -1,0 +1,447 @@
+<resources>
+    <string name="app_name">TherapyAI</string>
+    <string name="app_logo">TherapyAILogo</string>
+    <string name="sign_in">sign in text</string>
+    <string name="intro_text">some intro text</string>
+
+    <!-- General Buttons -->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+    <!-- activity_session_form.xml -->
+    <string name="label_patient_information">Patient Information</string>
+    <string name="question_patient_data_entry">How would you like to enter patient data?</string>
+    <string name="radio_scan_qr">Scan QR code</string>
+    <string name="radio_enter_manually">Enter manually</string>
+    <string name="button_scan_qr">Scan QR Code</string>
+    <string name="hint_passcode">Enter 6-digit passcode</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="hint_patient_id">Patient ID</string>
+    <string name="checkbox_confirm_info">I confirm this information is correct</string>
+    <string name="button_start_session">Start Session</string>
+    <string name="status_qr_scanned">QR Scanned Successfully!</string>
+    <string name="status_passcode_verified">Passcode Verified!</string>
+    <string name="status_passcode_incorrect">Incorrect Passcode.</string>
+
+
+    <!-- activity_audio_record.xml -->
+    <string name="status_ready_to_record">Ready to Record</string>
+    <string name="status_recording">Recording</string>
+    <string name="status_paused">Paused</string>
+    <string name="button_start">Start</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_resume">Resume</string>
+    <string name="button_finish_session">Finish</string>
+    <string name="button_add_note">Add Note</string>
+    <string name="label_session_notes">Session Notes</string>
+    <string name="status_service_connecting">Connecting…</string>
+
+
+    <!-- activity_send.xml -->
+<!--    <string name="header_review_session_notes">Review Session Notes</string>-->
+    <string name="button_add_summary">Add Summary</string>
+    <string name="button_edit_summary">Edit Summary</string>
+    <string name="button_delete_session">Delete</string>
+    <string name="button_submit_session">Submit</string>
+
+    <!-- Upload Progress -->
+    <string name="upload_progress_preparing">Preparing upload...</string>
+    <string name="upload_progress_uploading">Uploading audio...</string>
+    <string name="upload_progress_complete">Upload completed successfully!</string>
+    <string name="upload_progress_failed">Upload failed</string>
+
+    <!-- Dialogs & Toasts (AudioRecordActivity) -->
+    <string name="button_next">Next</string>
+    <string name="button_back">Back</string>
+    <string name="toast_service_not_ready">Recording service not ready yet.</string>
+    <string name="toast_permission_required">Audio recording permission is required.</string>
+    <string name="toast_permission_granted">Audio permission granted.</string>
+    <string name="toast_permission_denied">Audio permission denied. Cannot record.</string>
+    <string name="toast_recording_start_failed">Failed to start recording.</string>
+    <string name="toast_service_disconnected">Recording service disconnected.</string>
+    <string name="dialog_title_add_note">Add Note</string>
+    <string name="dialog_title_edit_note">Edit Note</string>
+    <string name="dialog_title_consent">Instructions &amp; Patient Consent</string>
+    <string name="dialog_message_consent">At the beginning of the recording, please follow the instructions below:\n\n1 - Be sure to be the first to speak when the recording starts.\n\n2 - Ask the patient to state their name, today\'s date, and confirm consent for recording.\n\nTap \'Begin Recording\' when ready and follow the instructions.</string>
+    <string name="button_begin_recording">Begin Recording</string>
+    <string name="dialog_title_finish_session">Finish Session &amp; Stop Recording</string>
+    <string name="dialog_message_finish_session">This will halt the session and stop recording.\nYou will be moved to a final review section to send the session to be analyzed.\n\nFinish session and move to session submission?</string>
+    <string name="button_yes_finish">Yes, Finish</string>
+    <string name="button_no_cancel">No, Cancel</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="error_service_unavailable_stop">Recording service unavailable. Cannot stop properly.</string>
+    <string name="error_no_audio_file">Recording stopped, but no audio file was saved. Session data lost.</string>
+    <string name="dialog_title_cancel_recording">Cancel Recording</string>
+    <string name="dialog_message_cancel_recording">Are you sure you want to cancel? The current recording and notes will be permanently lost.</string>
+    <string name="button_yes_cancel">Yes, Cancel</string>
+    <string name="button_no_keep_recording">No, Keep Recording</string>
+    <string name="note_title_timestamped">Timed Note - %s</string> <!-- %s is for the timestamp -->
+    <string name="note_title_generic">General Note #%d</string> <!-- %d is for the note number -->
+    <string name="label_add_timestamp">Include timestamp (%s)</string> <!-- Added for checkbox in dialog -->
+    <string name="dialog_title_add_summary_mandatory">Add Session Summary (Required)</string>
+    <string name="button_discard_session">Discard Session</string>
+    <string name="error_summary_cannot_be_empty">Summary cannot be empty.</string>
+    <string name="error_summary_cannot_be_empty_submit">A non-empty summary is required to submit the session.</string>
+    <string name="toast_upload_in_progress">Upload in progress, please wait.</string>
+
+    <!-- Dialogs & Toasts (SendActivity) -->
+    <string name="error_invalid_data">Error: Invalid recording data received.</string>
+    <string name="error_no_data">Error: No recording data provided.</string>
+    <string name="dialog_title_add_summary">Add Summary</string>
+    <string name="dialog_title_delete_session">Delete Session</string>
+    <string name="dialog_message_delete_session">Are you sure you want to delete this session? The recording and all notes will be permanently lost. This cannot be undone.</string>
+    <string name="dialog_title_submit_session">Submit Session</string>
+    <string name="dialog_message_submit_session">Ready to submit this session for processing?</string>
+    <string name="warning_no_summary">Warning: No summary has been added.</string>
+    <string name="button_submit">Submit</string>
+    <string name="error_missing_data_upload">Cannot upload: essential recording data is missing.</string>
+    <string name="dialog_title_success">Success</string>
+    <string name="dialog_message_success_upload">Your session has been submitted successfully.</string>
+    <string name="dialog_title_upload_failed">Upload Failed</string>
+    <string name="error_check_connection">Please check your network connection and try again.</string>
+    <string name="dialog_title_cancel_submission">Discard Session?</string>
+    <string name="dialog_message_cancel_submission">Are you sure you want to discard this session? The recording and notes will be permanently lost.</string>
+    <string name="button_yes_discard">Yes, Discard</string>
+    <string name="button_no_stay">No, Stay</string>
+
+    <string name="header_add_summary">Add Session Summary</string>
+    <string name="hint_enter_summary">Enter session summary here (Required)</string>
+    <string name="button_save_summary_and_continue">Save &amp; Review</string>
+    <string name="header_review_session_notes">Review &amp; Submit Session</string>
+    <string name="note_title_summary">Summary</string>
+    <string name="menu_title_see_notes">See Notes</string>
+
+    <string name="session_sentiment_overview_title">Session Sentiment Overview</string>
+    <string name="chart_no_session_score_data">No session sentiment data available.</string>
+    <string name="error_parsing_date">Error parsing date</string>
+
+
+    <string name="profile_id_prefix">ID: </string>
+    <string name="profile_email_prefix">Email: </string>
+    <string name="profile_dob_prefix">Date of Birth: </string>
+    <string name="profile_item_dob_label">DoB</string>
+
+
+    <string name="session_start_title">Start Your Session</string>
+    <string name="session_start_description">Please review and accept the terms and conditions below to generate a secure QR code for your session.</string>
+    <string name="view_terms_and_conditions"><u>View Terms &amp; Conditions</u></string>
+    <string name="accept_and_generate_qr">Generate QR Code</string>
+    <string name="qr_code_dialog_title">Your Session Code</string>
+    <string name="qr_code_dialog_instruction">Let the therapist scan the code and tell him the passphrase</string>
+    <string name="passphrase_prefix">Passphrase: </string>
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+
+    <string name="button_patient_details">Patient</string>
+    <string name="button_notes">Notes</string>
+    <string name="title_patient_details">Patient Details</string>
+    <string name="title_session_notes">Session Notes</string>
+    <string name="title_patient_information">Patient Information</string>
+    <string name="title_audio_record">Audio Recording Session</string>
+    <string name="title_vr_session">VR Session</string>
+    <string name="title_relaxation_session">Relaxation Session</string>
+    <string name="title_add_summary">Add Session Summary</string>
+    <string name="title_review_submit">Review &amp; Submit</string>
+
+
+    <string name="error_select_type">Must select a type for the session.</string>
+    <string name="error_type_not_available">Selected session type is not currently supported.</string>
+
+
+    <string name="my_profile_header">My Profile</string>
+    <string name="patient_no_data_found">No profile or session data found.</string>
+    <string name="error_loading_patient_data">Could not load your data. Please try again later.</string>
+    <string name="agree_to_terms_checkbox_text">I have read and agree to the Terms &amp; Conditions</string>
+
+
+    <string name="qr_scanned_successfully">✓ QR code scanned successfully</string>
+    <string name="qr_failed_get_data">Failed to get data from QR code</string>
+    <string name="qr_scan_cancelled">QR scan cancelled or failed</string>
+    <string name="form_complete_required_fields">Please complete all required fields correctly</string>
+    <string name="search_error_multiple_profiles">Error: Multiple profiles found for this ID.</string>
+    <string name="profile_found_dob_mismatch">Profile found, but Date of Birth does not match.</string>
+    <string name="dialog_no_profile_title">No Matching Profile</string>
+    <string name="dialog_no_profile_message">No existing profile found matching the entered ID and Date of Birth. Proceed with the manually entered information?</string>
+    <string name="dialog_proceed_button">Proceed</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="qr_pin_mismatch">✗ PIN and QR code don\'t match</string>
+    <string name="qr_decryption_failed">Decryption failed. Invalid PIN or QR code.</string>
+    <string name="error_unknown_session_type">Error: Unknown session type.</string>
+    <string name="error_unsupported_session_type">Error: Session type not supported.</string>
+
+    <string name="hint_session_title">Session Title</string>
+    <string name="hint_description_optional">Description (Optional)</string>
+    <string name="hint_session_notes_optional">Session Notes (Optional, Read-only during session)</string>
+
+
+    <!-- Recording Repository -->
+    <string name="error_upload_file_missing_empty">Audio file not found or is empty.</string>
+    <string name="error_upload_encrypted_file_creation">Encrypted file was not created or is empty.</string>
+    <string name="error_upload_token_missing">User session token is missing. Cannot upload.</string>
+    <string name="error_upload_failed_prefix">Upload failed:</string>
+    <string name="error_upload_preparation_prefix">Error preparing upload:</string>
+    <string name="error_recording_interrupted">Error: Recording interrupted</string>
+
+    <!-- Note Card Adapter (Potential strings if needed) -->
+    <string name="content_description_edit_note">Edit Note</string>
+    <string name="content_description_delete_note">Delete Note</string>
+
+    <!-- Welcome Screen-->
+    <string name="login">Login</string>
+    <string name="sign_up">sign up</string>
+    <string name="terms_agreement">By continuing, you agree to our Terms of Service and Privacy Policy</string>
+    <string name="moreAboutSpanish">More about The Spanish Home</string>
+
+    <!-- Login Screen-->
+    <string name="title_LoginLayout">Login</string>
+    <string name="email_LoginLayout">Email Address</string>
+    <string name="password_LoginLayout">Password</string>
+    <string name="stayLoggedIn_LoginLayout">Stay logged in</string>"
+    <string name="loginButton_LoginLayout">Sign In</string>
+    <string name="goToSignUp_LoginLayout">Don’t have an account? Sign Up</string>
+    <string name="forgotPassword_LoginLayout">Forgot Password?</string>
+    <string name="loginTerms_LoginLayout">By Logging In You Accept The Terms &amp; Conditions</string>
+
+
+    <string name="dialog_enable_notifications_title">Enable Notifications?</string>
+    <string name="dialog_enable_notifications_message">To receive timely alerts when your session analysis is ready, please enable notifications for Therapy AI in your device settings.</string>
+    <string name="dialog_enable_notifications_button_settings">Go to Settings</string>
+    <string name="dialog_enable_notifications_button_cancel">Cancel</string>
+
+    <string-array name="roles_array">
+        <item>Patient</item>
+        <item>Apotropos</item>
+        <item>Facility-Worker</item>
+        <item>Therapist</item>
+    </string-array>
+
+
+    <string name="navBarSession">Session</string>
+    <string name="navBarData">Data</string>
+    <string name="navBarBrowse">Browse</string>
+
+    <string name="up_button_description">Up Arrow</string>
+    <string name="toolbarMainTitle">Session</string>
+
+    <!-- Search & General -->
+    <string name="profiles_header">Profiles</string>
+    <string name="sessions_header">Sessions</string>
+    <string name="age_label">Age:</string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="error_network">Network error: %s</string>
+    <string name="error_search_profiles">Profile search error: %s</string>
+    <string name="error_search_sessions">Session search error: %s</string>
+
+    <!-- Profile Activity -->
+    <string name="session_history_title">Session History</string>
+    <string name="error_loading_profile">Failed to load profile</string>
+    <string name="error_loading_sessions">Failed to load sessions</string>
+
+    <!-- Session Detail Activity/Fragments -->
+    <string name="session_detail_title">Session Details</string>
+    <string name="session_summary_tab">Summary</string>
+    <string name="session_transcript_tab">Transcript</string>
+    <string name="patient_label">Patient:</string>
+    <string name="therapist_label">Therapist:</string>
+    <string name="session_date_label">Date:</string>
+    <string name="session_summary_header">Session Summary</string>
+    <string name="general_notes_header">General Notes</string>
+    <string name="sentiment_chart_desc">Session Sentiment Analysis</string>
+    <string name="timed_note_indicator">[Note]</string>
+    <string name="view_transcript_details">View Transcript &amp; Analysis</string>
+    <string name="therapist_utterance_label">Therapist:</string>
+    <string name="patient_utterance_label">Patient:</string>
+    <string name="timed_note_prefix">Note at %s:</string>
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search Patients or Sessions…</string>
+    <string name="search_query_empty">Please enter a search query.</string>
+    <string name="search_error_profiles">Profile search error: %1$s</string>
+    <string name="search_error_sessions">Session search error: %1$s</string>
+    <string name="header_profiles">Profiles</string>
+    <string name="header_sessions">Sessions</string>
+    <string name="no_profiles_found">No profiles found matching your query.</string>
+    <string name="no_sessions_found">No sessions found matching your query.</string>
+    <string name="search_session_history_hint">Search your session history</string>
+    <string name="patient_no_sessions_match_filter">No sessions found matching your search.</string>
+
+
+    <!-- Profile Screen (ProfileActivity) -->
+    <string name="profile_title">Patient Profile</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="profile_age_format">Age: %1$d</string> <!-- Example: Age: 30 -->
+    <string name="profile_national_id_format">ID: %1$s</string> <!-- Example: ID: 12345 -->
+    <string name="error_missing_profile_id">Error: Profile ID not provided.</string>
+    <string name="error_profile_not_found">Profile could not be found.</string>
+    <string name="error_fetching_profile">Failed to load profile: %1$s</string>
+    <string name="error_fetching_sessions">Failed to load sessions: %1$s</string>
+
+    <!-- Session Screen (SessionActivity & Fragments) -->
+    <string name="tab_session_overview">Overview</string>
+    <string name="tab_session_transcript">Transcript</string>
+    <string name="error_missing_session_id">Error: Session ID not provided.</string>
+    <string name="error_loading_session_prefix">Failed to load session:</string>
+    <string name="session_title_format">%1$s - %2$s</string> <!-- Example: John Doe - 2024-05-15 -->
+
+    <!-- Session Overview Fragment -->
+    <string name="overview_patient_label">Patient:</string>
+    <string name="overview_therapist_label">Therapist:</string>
+    <string name="overview_date_label">Date:</string>
+    <string name="overview_summary_label">Session Summary</string>
+    <string name="overview_general_notes_label">General Notes</string>
+    <string name="overview_patient_format">%1$s (%2$s)</string> <!-- Example: John Doe (john.doe@email.com) -->
+    <string name="overview_therapist_format">%1$s (%2$s)</string> <!-- Example: Dr. Smith (smith@therapy.ai) -->
+    <string name="overview_date_format">%1$s</string> <!-- Example: 2024-05-15 -->
+    <string name="overview_no_general_notes">No general notes recorded for this session.</string>
+    <string name="overview_sentiment_chart_title">Sentiment Over Time</string>
+
+    <!-- Session Transcript Fragment -->
+    <string name="transcript_sentiment_chart_title">Sentiment Chart</string> <!-- Or hide title -->
+    <string name="transcript_timed_notes_label">Notes:</string>
+
+    <!-- Item Layouts -->
+    <string name="profile_item_DateOfBirth_label">Birth Date</string> <!-- For item_profile_search.xml -->
+    <string name="session_item_date_label">Date:</string> <!-- If needed in item_session_summary -->
+    <string name="timed_note_time_format">%1$s</string> <!-- Example: 05:30 -->
+
+    <string name="unknown_value">Unknown</string>
+    <string name="not_available_abbr">na</string>
+    <string name="overview_no_summary">No Summary Available</string>
+
+    <string name="error_cannot_load_history_no_id">Cannot load session history: User not identified.</string>
+    <string name="patient_no_sessions_found">You have no session history yet.</string>
+
+    <!--    dialog_qr_code.xml-->
+    <string name="passphrase">Passphrase: ------</string>
+    <string name="close">Close</string>
+
+
+    <!--    fragment_session_therapist.xml-->
+    <string name="add_card">Add Card</string>
+
+    <!--    item_card_session.xml-->
+    <string name="edit_card">Edit</string>
+    <string name="delete_card">Delete</string>
+    <string name="edit_mode">Edit Mode</string>
+    <string name="card_selected">Card Selected</string>
+
+    <!--    BaseSignedActivity.xml-->
+    <string name="session_timeout_title">Session About to Expire</string>
+    <string name="session_timeout_message">You will be logged out in 1 minute due to inactivity. Touch the screen to remain logged in.</string>
+    <string name="stay_logged_in">Stay Logged In</string>
+    <string name="toast_key_auth_required">re - authentication is needed</string>
+    <string name="auth_dialog_title">Unlock to continue</string>
+    <string name="auth_dialog_description">TherapyAI needs you to confirm your screen lock to secure this session.</string>
+    <string name="error_launching_auth">Auth couldnt launch.</string>
+    <string name="error_auth_not_configurable">Auth is not configurable.</string>
+    <string name="error_device_not_secure">Auth not set.</string>
+    <string name="toast_auth_success_try_again">Retry previous action.</string>
+    <string name="toast_auth_failed">Device credentials confirmation failed or was cancelled.</string>
+    <string name="error_no_audio_file_or_key">Audio file or key missing from device</string>
+    <string name="error_cannot_add_note_no_session">Cannot add note.</string>
+    <string name="error_finalize_recording_failed">Failed to stop and finilize recording.</string>
+
+        <!-- SessionViewModel -->
+        <string name="error_summary_empty_for_submit_from_vm">Summary cannot be empty. Please add a summary before submitting.</string>
+
+        <!-- RecordingService -->
+        <string name="notification_recording_in_progress">Recording session in progress…</string>
+        <string name="notification_recording_paused">Recording paused</string>
+        <string name="notification_channel_name_recording">Audio Recording</string>
+        <string name="notification_channel_description_recording">Displays status while recording audio session</string>
+        <!-- R.string.app_name is typically already defined -->
+
+
+
+        <!-- SessionHostActivity -->
+        <string name="error_session_data_missing_critical">Error: Session data missing. Cannot start session.</string>
+        <string name="error_navigation_setup_failed_critical">Error: Navigation setup failed. Cannot continue.</string>
+
+        <string name="auth_dialog_title_secure_action">Authentication Required</string>
+        <string name="auth_dialog_description_secure_action">Please confirm your screen lock to continue with this secure action.</string>
+        <string name="error_launching_auth_intent">Could not start authentication process. Please try again.</string>
+        <string name="error_auth_intent_failed_os_issue">Could not create authentication request. Ensure your device screen lock is properly set up.</string>
+        <string name="error_device_not_secure_for_auth">Your device is not secured with a PIN, pattern, or password. This action cannot be performed without device security.</string>
+        <string name="toast_auth_success_try_again_start">Authentication successful. Please try starting the action again.</string>
+        <string name="toast_auth_failed_action_cancelled">Authentication failed or was cancelled. Action cannot proceed.</string>
+
+        <string name="toast_no_patient_details_yet">Patient details not available yet.</string>
+        <!-- title_patient_details, button_ok often generic -->
+        <!-- <string name="title_patient_details">Patient Details</string> -->
+        <!-- <string name="button_ok">OK</string> -->
+
+        <string name="toast_no_session_notes">No session notes available for this card.</string>
+        <!-- title_session_notes often generic -->
+        <!-- <string name="title_session_notes">Session Notes</string> -->
+
+        <string name="error_missing_data_for_upload_check_all_fields">Cannot submit. Essential session data is missing. Please ensure all information is complete.</string>
+        <string name="error_summary_cannot_be_empty_for_submit">Summary cannot be empty. Please add a summary before submitting the session.</string>
+        <string name="toast_operation_in_progress_wait">Operation in progress. Please wait…</string>
+
+        <!-- dialog_title_success often generic -->
+        <!-- <string name="dialog_title_success">Success</string> -->
+        <string name="dialog_message_session_submitted_successfully">Session submitted successfully!</string>
+        <string name="dialog_title_delete_session_confirmation">Delete Session?</string>
+        <string name="dialog_message_are_you_sure_delete_session">Are you sure you want to delete this session and all its data? This action cannot be undone.</string>
+        <string name="error_check_connection_and_retry">Please check your internet connection and try again.</string>
+        <string name="dialog_title_discard_session_confirmation">Discard Session?</string>
+
+        <string name="toast_session_discarded">Session discarded.</string>
+        <string name="toast_session_submitted">Session submitted.</string>
+
+        <!-- RecordingRepository -->
+        <string name="error_encrypted_audio_file_invalid">Encrypted audio file not found or is invalid.</string>
+        <string name="error_session_encryption_key_missing">Session encryption key is missing. Cannot proceed.</string>
+        <string name="error_user_session_token_missing_login_again">User session token is missing. Please log in again.</string>
+        <string name="error_key_auth_required_keystore_op">Key authentication required: User not authenticated for Keystore key operation.</string>
+        <string name="error_key_auth_aead_corrupt">Key authentication error or session key corrupt: AEADBadTagException.</string>
+        <string name="error_preparing_upload">Error preparing upload: %1$s</string> <!-- For parameterized error -->
+        <string name="error_upload_failed_generic">Upload failed: %1$s</string> <!-- For parameterized error -->
+
+    <!-- ReviewSubmitFragment (from previous context, if needed) -->
+        <string name="error_finding_note">Error finding note to edit.</string>    <!-- In-App Notifications -->
+    <string name="notification_icon">Notification icon</string>
+    <string name="dismiss_notification">Dismiss notification</string>
+    <string name="in_app_notification_title">New Message</string>
+    <string name="in_app_notification_dismiss">Dismiss</string>
+    <string name="system_notifications_enabled">System notifications are working normally</string>
+    <string name="system_notifications_disabled">System notifications are disabled for this app</string>
+    <string name="system_notifications_disabled_desc">In-app notifications will be used instead. Tap to enable system notifications for better experience.</string>
+    <string name="in_app_sound_note">Note: In-app sounds will not play during active sessions to avoid interruption</string>
+    <string name="fallback_notification_info">When system notifications are disabled, the app will automatically show in-app notifications as a fallback to ensure you don\'t miss important messages.</string>
+    <string name="login_terms_services">Terms and Conditions for Using the Therapy AI Application\nLast Updated: May 25, 2025\nWelcome to Therapy AI, an advanced platform for managing, documenting, and analysing therapy sessions using artificial intelligence technologies. Please read the following terms of use carefully. Use of the application constitutes full and explicit agreement to these terms.\n\n1. Definitions\n•\t“The Application” – The Therapy AI platform, including all services, interfaces, content, modules, and features it provides.\n•\t“The User” – A certified therapist authorized to use the system for therapeutic purposes.\n•\t“The Operator” – The company that develops, owns, and is responsible for maintaining and operating the application.\n\n2. Terms of Use\n•\tUse of the application is permitted only for certified therapists who hold a valid license to practice psychological, psychotherapeutic, or clinical therapy.\n•\tLogin credentials and access to the system must not be shared or transferred to others.\n•\tThe user agrees to use the application in accordance with applicable laws, including the Privacy Protection Law, the Care of the Mentally Impaired Act, and relevant institutional professional guidelines.\n\n3. Privacy and Data Security\n•\tData collected through the application is stored securely in the cloud (Azure Cosmos DB), in compliance with strict information security standards such as ISO/IEC 27001.\n•\tPersonal or clinical data will not be shared with third parties without the patient’s explicit written consent, unless required by law.\nHIPAA Compliance (USA):\n•\tIf services are provided within the United States or to entities subject to U.S. regulation, the application complies with the Health Insurance Portability and Accountability Act (HIPAA) regarding the protection and privacy of medical information (PHI).\n•\tThe system includes encryption mechanisms, access controls, data separation, and activity logging to ensure full legal compliance.\n•\tTherapists subject to HIPAA may sign a Business Associate Agreement (BAA) with the operator upon request.\n\n4. Liability and Limitation of Liability\n•\tThe application is provided as-is, without any express or implied warranties.\n•\tThe operator shall not be held liable for any direct or indirect damages resulting from the use of the application.\n\n5. Intellectual Property\n•\tAll copyrights, trademarks, code, and content included in the application are the exclusive property of the operator or its licensors.\n•\tIt is prohibited to copy, reproduce, transmit, distribute, publish, or use the app’s content for commercial purposes without prior written approval from the operator.\n\n6. Changes to the Terms\n•\tThe operator reserves the right to update these terms of use at any time.\n•\tUpdated terms will be published within the app, and continued use will constitute renewed consent to the revised terms.\n\n7. Legal Guardianship and Valid Consent\n•\tIf the patient is a minor (under 18), legally protected, or lacks legal capacity, use of the application—including session recording—requires a signed consent from the legal guardian.\n•\tThe guardian must present official documentation such as a court appointment or legal authorization.\n•\tWithout valid consent, access to the app will be denied, and the operator reserves the right to block or delete the associated account.\n•\tAny use of the system without valid legal consent is the sole responsibility of the user.\n\n8. User Responsibility for Credential Security\n•\tThe user is responsible for maintaining the confidentiality of their login details (username, password, authentication methods).\n•\tIt is strictly prohibited to share access with any third party, including other therapists or unauthorized staff. Any activity conducted under the user’s account will be deemed to have been performed by them, unless the operator is notified in writing of suspected unauthorized access.\n\n\n9. Transparency and Permission Management – Patient Data Rights\nTo improve service quality, the application collects and analyses the following information during use:\n•\tAudio recordings of sessions\n•\tAutomatic transcriptions\n•\tSentence-level sentiment analysis\n•\tBasic profile information (e.g., age, gender, login date)\nAccess to this information is available to:\n•\tThe patient (via the personal area in the app)\n•\tThe direct therapist\n•\tA supervisor therapist (with explicit approval only)\nPatients are entitled to:\n•\tView their transcripts\n•\tSubmit requests to correct or delete specific sections, subject to professional approval\n\n10. Contact\nThe application has not yet been deployed, and therefore no official contact email is currently available. A dedicated support email will be provided once the application is officially launched and its owners assume operational responsibility.</string>
+    <string name="terms_content_placeholder">Informed Consent for Recording a Therapy Session upon QR Scan by the Patient\nLast Updated: May 25, 2025\nTo ensure transparency, privacy, and clinical accountability, your participation in a therapy session via the Therapy AI application constitutes informed consent for recording the session, in accordance with the following terms:\n\n1. Purpose of the Recording\nThe system records the audio session between the patient and the therapist for the purposes of:\n•\tAutomatic transcription of the conversation\n•\tSentiment analysis performed using artificial intelligence\n•\tEnhancing the quality of care and enabling continuous clinical follow-up\n\n2. Use of Information\n•\tThe recording will be used solely for therapeutic and professional purposes.\n•\tThe information will not be shared with external parties or used for any non-therapeutic purpose, unless required by law or with the explicit consent of the patient.\n\n3. Retention and Deletion Policy\n•\tThe recording will be securely stored for up to 12 months from the date of recording, unless the therapist explicitly requests to retain it for additional therapeutic needs.\n•\tUpon the end of the retention period, the recording will be securely deleted with no option for recovery, unless there is a legal or clinical obligation to retain it.\n\n4. Data Security and Access\n•\tAll recordings and personal data are stored in a secure cloud environment that complies with strict information security standards such as ISO 27001.\n•\tAccess to the data is restricted to:\n\tThe patient’s direct therapist\n\tThe patient themselves\n\tA certified supervisor therapist, if required for therapeutic purposes only\n•\tAll access is logged and subject to strict permission controls.\n\n\n5. Transparency and Access Rights – Patient Data Rights\nTo improve service quality, the application collects and analyses the following information during use:\n•\tAudio recordings of the session\n•\tAutomatic transcriptions\n•\tSentence-level sentiment analysis\n•\tBasic profile information (e.g., age, gender, login date)\nAccess to this information is available to:\n•\tThe patient (via their personal area in the app)\n•\tThe direct therapist\n•\tA supervisor therapist (with explicit approval)\nThe patient has the right to:\n•\tView the transcript\n•\tRequest corrections or deletions of specific sections, subject to professional approval\n\n6. Patient Rights\n•\tConsent is given voluntarily and may be revoked at any time by directly contacting the therapist.\n•\tUpon withdrawal of consent, the deletion of the recording will be considered in accordance with the law and professional judgment.\n\n7. Legal Guardianship\n•\tIf the patient is a minor, legally protected, or has a court-appointed guardian, a signed consent form from the legal guardian along with appropriate documentation must be provided.\n•\tWithout proper documentation, participation in the session through the app will not be permitted.\n\n\n8. Use of the System in Emergency Situations\n•\tThe application is not a substitute for emergency medical care or immediate psychiatric assistance.\n•\tIn cases of severe emotional distress, imminent danger, or the need for urgent intervention, patients must contact appropriate authorities such as a medical centre, emergency room, or mental health crisis line.\n•\tThe responsibility to seek external help when needed lies solely with the patient.\n\n9. Signature and Digital Consent Documentation\nInformed consent for recording and documentation is given by scanning a unique QR code before the session begins.\nUpon scanning, a summary screen will appear, prompting the patient to explicitly confirm the terms. This action will be digitally logged and stored as a binding electronic signature.\nThe system maintains a signed record of the consent, including a timestamp, user identifier, and technical identifiers such as IP address or device ID.\n\n10. Contact\nThe application has not yet been deployed, and therefore no official contact email is currently available. A dedicated support email will be provided once the application is officially launched and its owners assume operational responsibility.\n\n</string>
+    <string name="status_finalizing_session">Finalizing Session…</string>
+    
+    <!-- Profile Dialog -->
+    <string name="local_profile_note">This profile was created from session data and may not include all information available from cloud records.</string>
+    
+    <!-- Profile Choice Dialogs -->
+    <string name="dialog_existing_profile_title">Patient ID Already Exists</string>
+    <string name="dialog_existing_profile_match_message">This Patient ID already exists in the system and the information matches your entry.</string>
+    <string name="dialog_existing_profile_match_choice">Would you like to use the existing profile?</string>
+    <string name="dialog_existing_profile_mismatch_message">This Patient ID already exists in the system, but some information doesn\'t match your entry.</string>
+    <string name="dialog_existing_profile_mismatch_choice">Since Patient IDs are unique, you must either use the existing profile or correct the Patient ID if you made an error.</string>
+    <string name="dialog_use_existing_profile">Use Existing Profile</string>
+    <string name="dialog_correct_patient_id">Correct Patient ID</string>
+    
+    <!-- Pull to Refresh -->
+    <string name="search_refresh_no_query">No previous search to refresh. Enter a search term first.</string>
+
+
+</resources>

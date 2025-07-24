@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.RoundedOnlyTop"
+           parent="@style/ShapeAppearance.MaterialComponents.SmallComponent">>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.RoundedBoth"
+        parent="@style/ShapeAppearance.MaterialComponents.SmallComponent">>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+
+    </style>
+
+    <style name="ShapeAppearance.App.Button.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="NoUnderlineTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">0dp</item>
+
+    </style>
+
+    <style name="FullScreenDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+
+    <style name="CustomCategoryButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">?attr/colorCategoryBtn</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="android:textColor">?attr/colorOnCategoryBtnText</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>    
+    <array name="rainbow">
+        <item>#FF0000</item>
+        <item>#FF7F00</item>
+        <item>#FFFF00</item>
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#4B0082</item>
+        <item>#8F00FF</item>
+    </array>
+
+    <!-- Custom TextInputLayout style with better error visibility in dark mode -->
+    <style name="Widget.TherapyAI.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Force the error text to be more visible in both light and dark modes -->
+        <item name="errorTextColor">#FF5252</item> <!-- Brighter red -->
+        <item name="boxStrokeErrorColor">#FF5252</item> <!-- Matching stroke color -->
+    </style>
+
+</resources>

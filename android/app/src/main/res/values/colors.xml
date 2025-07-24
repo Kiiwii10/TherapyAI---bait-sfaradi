@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Generated Colors from Primary #32a8da -->
+    <color name="m3_primary_light">#006782</color>
+    <color name="m3_on_primary_light">#FFFFFF</color>
+    <color name="m3_primary_container_light">#BCE9FF</color>
+    <color name="m3_on_primary_container_light">#001F29</color>
+    <color name="m3_secondary_light">#4D616C</color>
+    <color name="m3_on_secondary_light">#FFFFFF</color>
+    <color name="m3_secondary_container_light">#D0E6F3</color>
+    <color name="m3_on_secondary_container_light">#081E27</color>
+    <color name="m3_tertiary_light">#605A7D</color>
+    <color name="m3_on_tertiary_light">#FFFFFF</color>
+    <color name="m3_tertiary_container_light">#E6DEFF</color>
+    <color name="m3_on_tertiary_container_light">#1C1736</color>
+    <color name="m3_error_light">#BA1A1A</color>
+    <color name="m3_on_error_light">#FFFFFF</color>
+    <color name="m3_error_container_light">#FFDAD6</color>
+    <color name="m3_on_error_container_light">#410002</color>
+    <color name="m3_background_light">#F6FAFC</color>
+    <color name="m3_on_background_light">#171C1F</color>
+    <color name="m3_surface_light">#F6FAFC</color>
+    <color name="m3_on_surface_light">#171C1F</color>
+    <color name="m3_surface_variant_light">#DCE4E8</color>
+    <color name="m3_on_surface_variant_light">#40484C</color>
+    <color name="m3_outline_light">#70787C</color>
+    <color name="m3_outline_variant_light">#C0C8CC</color>
+    <color name="m3_inverse_surface_light">#2C3133</color>
+    <color name="m3_inverse_on_surface_light">#EDF1F4</color>
+    <color name="m3_inverse_primary_light">#64D3FF</color>
+    <color name="m3_surface_dim_light">#D7DADF</color>
+    <color name="m3_surface_bright_light">#F6FAFC</color>
+    <color name="m3_surface_container_lowest_light">#FFFFFF</color>
+    <color name="m3_surface_container_low_light">#F0F4F7</color>
+    <color name="m3_surface_container_light">#EAEFF1</color>
+    <color name="m3_surface_container_high_light">#E4E9EC</color>
+    <color name="m3_surface_container_highest_light">#DFE3E6</color>
+
+    <color name="m3_primary_dark">#64D3FF</color>
+    <color name="m3_on_primary_dark">#003545</color>
+    <color name="m3_primary_container_dark">#004D63</color>
+    <color name="m3_on_primary_container_dark">#BCE9FF</color>
+    <color name="m3_secondary_dark">#B4CAD6</color>
+    <color name="m3_on_secondary_dark">#1F333D</color>
+    <color name="m3_secondary_container_dark">#364954</color>
+    <color name="m3_on_secondary_container_dark">#D0E6F3</color>
+    <color name="m3_tertiary_dark">#CAC1EA</color>
+    <color name="m3_on_tertiary_dark">#312C4C</color>
+    <color name="m3_tertiary_container_dark">#484364</color>
+    <color name="m3_on_tertiary_container_dark">#E6DEFF</color>
+    <color name="m3_error_dark">#FFB4AB</color>
+    <color name="m3_on_error_dark">#690005</color>
+    <color name="m3_error_container_dark">#93000A</color>
+    <color name="m3_on_error_container_dark">#FFDAD6</color>
+    <color name="m3_background_dark">#0F1417</color>
+    <color name="m3_on_background_dark">#DFE3E6</color>
+    <color name="m3_surface_dark">#0F1417</color>
+    <color name="m3_on_surface_dark">#DFE3E6</color>
+    <color name="m3_surface_variant_dark">#40484C</color>
+    <color name="m3_on_surface_variant_dark">#C0C8CC</color>
+    <color name="m3_outline_dark">#8A9296</color>
+    <color name="m3_outline_variant_dark">#40484C</color>
+    <color name="m3_inverse_surface_dark">#DFE3E6</color>
+    <color name="m3_inverse_on_surface_dark">#2C3133</color>
+    <color name="m3_inverse_primary_dark">#006782</color>
+    <color name="m3_surface_dim_dark">#0F1417</color>
+    <color name="m3_surface_bright_dark">#353A3D</color>
+    <color name="m3_surface_container_lowest_dark">#0A0F11</color>
+    <color name="m3_surface_container_low_dark">#171C1F</color>
+    <color name="m3_surface_container_dark">#1B2023</color>
+    <color name="m3_surface_container_high_dark">#262B2D</color>
+    <color name="m3_surface_container_highest_dark">#313538</color>
+
+
+    <color name="orange">#FFA000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="swipe_delete_background">#F44336</color>
+
+    <color name="app_logo_background">#32A7D9</color>
+    <color name="profile_icon_background">#32A7D9</color> <!-- Same as app_logo_background -->
+
+    <color name="custom_resume_green">#4CAF50</color> <!-- Standard Material Green 500 -->
+    <color name="on_custom_resume_green">#FFFFFF</color> <!-- White for contrast -->
+
+    <color name="sentiment_positive">#4CAF50</color>
+    <color name="sentiment_neutral">#9E9E9E</color>
+    <color name="sentiment_negative">#F44336</color>
+    <color name="sentiment_mixed">#FFC107</color>
+    <color name="therapist_indicator_color">#2196F3</color>
+    <color name="grey">#737373</color>
+
+
+
+
+
+
+
+</resources>

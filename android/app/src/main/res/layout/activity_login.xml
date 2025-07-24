@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.welcome.LoginActivity"
+    android:background="?attr/colorSecondaryBackground"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/childToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSecondaryBackground"
+        app:titleTextColor="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent" >
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Top illustration -->
+
+
+    <!-- White form container with rounded top corners -->
+    <ImageView
+        android:id="@+id/topIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/undraw_quiet_street"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@id/formContainer"
+        app:layout_constraintTop_toBottomOf="@id/childToolbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/formContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topIllustration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:cardBackgroundColor="?attr/colorPrimaryBackground"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.RoundedOnlyTop"
+        >
+
+
+    <!-- Center content in the middle, using a LinearLayout in ConstraintLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        >
+
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/NoUnderlineTextInputLayout"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Button.Pill"
+            app:hintEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@null"
+                android:hint="@string/email_LoginLayout"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/NoUnderlineTextInputLayout"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Button.Pill"
+            app:hintEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="@string/password_LoginLayout"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        &lt;!&ndash; Stay Logged In Checkbox &ndash;&gt;-->
+<!--        <CheckBox-->
+<!--            android:id="@+id/stayLoggedInCheckBox"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/stayLoggedIn_LoginLayout"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginButton_LoginLayout"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_pill_gradient"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp"
+            app:cornerRadius="8dp"/>
+
+<!--        &lt;!&ndash; Terms and Conditions Link &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/loginTermsTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/loginTerms_LoginLayout"-->
+<!--            android:textColor="?attr/colorPrimary"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true" />-->
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotPassword_LoginLayout"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginBottom="16dp" />
+
+
+
+
+
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimaryBackground" format="reference|color" />
+    <attr name="colorPrimary" format="reference|color" />
+    <attr name="colorError" format="reference|color" />
+    <attr name="colorButton" format="reference|color" />
+
+    <attr name="colorOnPrimaryBackground" format="reference|color" />
+    <attr name="colorSecondaryBackground" format="reference|color"/>
+
+    <attr name="colorCategoryBtn" format="reference|color" />
+    <attr name="colorSelectedCategoryBtn" format="reference|color" />
+    <attr name="colorOnCategoryBtnText" format="reference|color" />
+
+    <attr name="colorOnSurfaceVariant" format="reference|color" />
+    <attr name="colorOnSurface" format="reference|color" />
+    <attr name="colorOnPrimary" format="reference|color" />
+
+
+    <attr name="positiveSentimentColor" format="color" />
+    <attr name="neutralSentimentColor" format="color" />
+    <attr name="negativeSentimentColor" format="color" />
+    <attr name="mixedSentimentColor" format="color" />
+    <attr name="therapistIndicatorColor" format="color" />
+
+
+    <attr name="materialCardViewOutlineStyle" format="reference"/>
+
+</resources>

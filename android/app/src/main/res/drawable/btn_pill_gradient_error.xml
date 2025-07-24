@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Round corners -->
+    <corners android:radius="50dp"/>
+
+    <!-- Optional gradient (adjust colors to your preference) -->
+    <gradient
+        android:startColor="?attr/colorError"
+        android:centerColor="?attr/colorError"
+        android:endColor="?attr/colorError"
+        android:angle="0" />
+
+    <!-- Optional: If you want some padding inside the button text -->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</shape>

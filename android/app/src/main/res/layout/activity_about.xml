@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        app:titleTextColor="?attr/colorOnSurface"
+        app:title="About"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Who Are We -->
+            <TextView
+                android:id="@+id/text_who"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who Are We?"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/text_who_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are a team of students from the Technion. As part of out final project, we have developed a state-of-the-art solution to enhance mental health therapy sessions."
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- The Client & The Facility -->
+            <TextView
+                android:id="@+id/text_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Client &amp; The Facility"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_client_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our project is executed in close collaboration with the Spanish House in Haifa. The Spanish House is a reputable facility committed to providing high-quality mental health care. Their focus on improving service delivery and easing facility workers' workload makes them an ideal partner for our application. For more information, visit https://ba-sfaradi.co.il."
+                android:autoLink="web"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:layout_marginBottom="16dp" />
+
+            <!-- The App -->
+            <TextView
+                android:id="@+id/text_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The App"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_app_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our application is a comprehensive therapy recorder and cloud analyzer that transforms the way therapy sessions are managed. It harnesses Azure's HIPAA-compliant cognitive services to deliver robust performance and advanced features, including secure session recording, dual-speaker diarization, emotional sentiment analysis, Hebrew language support, and seamless cloud integration with Azure Cosmos DB."
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Our Mission -->
+            <TextView
+                android:id="@+id/text_mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HIPAA"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_mission_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are committed to maintaining the highest standards of data security and privacy. Our application is designed to be HIPAA-compliant, ensuring that all therapy session recordings and analyses are handled with the utmost care and confidentiality. We prioritize the protection of sensitive information, providing peace of mind for both therapists and clients. Data is encrypted, deleted when not in use, and protected at all times."
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
